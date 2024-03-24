@@ -1,0 +1,81 @@
+Tendencias centrales:
+
+.- no hay mucha diferencia entre las medias y las medianas
+
+Graficas:
+
+	Cardinales:
+
+.- todos los mejores jugadores dos Grand Master
+.- hay una prevalencia de Rusia, USA y la India
+.- hay valores extremos en la cantidad de jugadores por 
+cada pais de origen. Valores muy extremos
+.- ESTUDIAR RELACION ENTRE PROCEDENCIA Y Q DE GM
+
+.- me llama la atencion que Ucrania esta en cuarto lugar con una 
+cantidad considerable mientras que su poblaciones mucho mas reducida
+que las otras. 
+Seria interesante cotejar con otra base de datos y estudiar porcentaje
+de GM vs poblacion de su pais
+
+	Numericas:
+
+.- ELO y games tienen distribuciones de probabilidad chi cuadradas diria yo
+y relativamente comunes, es mas improbable encontrar judaores con 
+cada vez mayor cantidad de partidas y mayor ELO
+
+.- la edad es interesante, tiene una distribucion diferente, una distribucion beta,
+con la mayoria de jugadores nacidos sobre 1990 y descendiente probabilidad mientras
+mas aumentamos la edad (reducimos año de nacimiento)
+
+.- las plotbox no muestran una distribucion especialmente concentrada.
+.- la columna games presenta valores atipicos, no exagerados pero los muestra
+
+MULTIVARIANTE
+
+.- en el heatmap:
+
+	- sale una correlacion interesante (.39) entre games y ELO
+	- correlacion negativa (-.35) entre federacion y elo
+	- una correlacion exageradamente negativa (-.67) entre games y birth_year
+	- correlacion nula entre birth_year y elo, federacion_c y birth_year, casi nula entre games y birth_year
+
+estudiar correlaciones entre:
+- games y elo
+-federacion y elo
+- games y birth year
+- elo y birth_year. en el estudio univariante vi una tendencia con un pico muy elevado
+en un conjunto concreto de años, contando que este df aglutina los mejores jugadores, 
+esperaba una correlacion mas alta entre el año de nacimiento y el elo
+
+federacion VS ELO
+
+hay diferencias significativas en la media del elo por federaciones
+paises que destacan por arriba : noruega y bulgaria (margsen?)
+paises que destacan por la cola: dinamarca y suiza
+
+games VS ELO 
+
+no se aprecia una correlacion muy fuerte en el scatterplot
+cierta correlacion positiva pero no exagerada, no parece determinante INTERESANTE
+tampoco creo que todas las partidas esten aqui reflejadas, parecen pocas para los
+mejores, quizas solo hay datos de torneos oficiales?
+
+birth year vs games
+
+se aprecia cierta correlacion negativa, tiene sentido, mientras mas joven menos partidas has jugado
+
+elo vs birth year
+
+no se aprecia correlacion como se veia en el heatmap
+pero es e¡interesante como habia una mayoria abrumadora concentrada en un periodo concreto
+
+COCLUSIONES
+
+Cuando te encuentras en la elite del ajedrez como es el caso de este dataset
+
+.- no hay una relacion directa entre q de partidas y tu elo
+.- no hay una relacion directa entre el año de nacimiento y el elo
+.- si hay una relacion entre la media del elo y la federacion, situandose el elo mas elevado
+en las federaciones noruega y y bulgara. Esto podria ser debido a jugadores excepcionales
+que salen de los baremos y se fijan como outliers en estas federaciones
