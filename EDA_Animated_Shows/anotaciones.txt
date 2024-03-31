@@ -1,0 +1,85 @@
+Objetivo: quiero ver que es lo que mas gusta
+
+ANALISIS UNIVARIANTE
+
+	CATEGORICAS
+
+.- Original channel
+
+	-muy dispersas, diferencia muy grande entre la media y la mediana (cantidad de series producidas)
+	-syndication tiene muchas mas que el resto (estudiar popularidad de sus series(hecho)) --> las mas populares en google users 
+
+.- American company
+	
+	-tambien muy dispersa, diferencia entre la media y la mediana (cantidad de series producidas)
+	-Hanna-Barbera mas del doble del segundo
+
+.- Tecnique
+
+	-tambien muy dispersa
+	-la inmensa mayoria realizadas por tecnica tradicional, mas del triple del segundo
+	-despues realizadas con tecnicas flash y CGI, distantes de tradicional pero tambien muy distantes del resto
+
+.- Emitiendo
+
+	-la mayoria siguen en antena
+	-de aqui no se si voy a sacar mucho
+
+EN EL ANALISIS UNIVARIABLE DE LAS CATEGORICAS DEDUZCO QUE LA INMENSA MAYORIA DE SERIES ESTAN 
+REALIZADAS CON LAS MISMAS TECNICAS, MAYORITARAMENTE TRADICIONAL Y POR LOS 2 O 3 MISMOS CANALES Y COMPAÑIAS
+
+	NUMERICAS
+
+.- Episodes
+
+	- totalmente disperso, la mayoria concentrado en una parte y una cantidad de 
+	outliers aberrante
+	- una mediana de 26 episodios pero el maximo es de 4633 por ejemplo
+	- barrio sesamo es el programa con mayor numero de episodios con 4633,
+	aun sigue emitiendo
+	
+	creo que seria interesante estudiar un modelo con y sin aoutliers y ver como afectan estos
+
+.- IMDb
+
+	- existencia de outliers
+	- distribucion sesgada a la izquierda
+
+.- Google users
+
+	- existencia de outliers
+	- distribucion sesgada a la izquierda
+
+--- estudiamos las peliculas con mas de 90 puntos en google
+
+la mayoria de series son de Syndication (82) con distancia de CBS (45), Cartoon Network (43) y ABC (40)
+estos tres canales forman parte de los que mas series generan en realidad
+*dato -> netflix es el segundo canal que mas series produce y solo tiene 10 con nota superior a 90
+un 17% de las series con mas de 90 de nota pertenecen a Syndication
+el resto apenas llega al 10% de series en este nivel (3 cadenas)
+
+--- estudiamos las peliculas con mas de 8 puntos en IMBd
+
+en imbd las notas son mas bajas que en google por lo general
+
+curiosamente el canal con mas series posicionadas en este baremo es netflix (13%), lo cual
+dista mucho del estudio en la notas de google
+
+en segundo lugar encontramos a Cartoon network (8%) repitiendo como en google
+
+syndication apenas tiene un 5% de series en este baremos de notas altas de imbd
+
+
+ES LLAMATIVO COMO IMDB TIENE UNA NOTAS MUCHO MAS BAJAS QUE GOOGLE
+ES LLAMATIVO LA COMPOSICION DE LA SERIES MAS VALORADAS
+-- EN GOOGLE SYNDICATION GANA POR UNA CLARA DIFERENCIA MIENTRAS QUE EN IMBD, AUNQUE ESTA EN EL TOP, APENAS APORTA UN 5%
+-- EN IMDB NETFLIX GANA POR GOLEADA, MIENTRAS QUE EN GOOGLE APENAS LLEGA AL 10% Y NO ENTRA EN EL TOP
+-- CARTOON NETWORK PERMANECE ESTABLE EN AMBAS PLATAFORMAS CON UN 10% APROX DE SERIES ENTRE LAS MEJORES VALORAS
+SERIA INTERESANTE ESTUDIAR EL TIPO DE USUARIOS QUE VOTAN EN ESTAS PLATAFORMAS, PUESTO QUE LAS COMPOSICION DE LOS 
+RANKINGS Y LAS NOTAS DIFIEREN MUCHO
+
+¿Habra relacion entre la recepcion del publico (valoraciones recibidas) con que sigan o no emitiendo?
+
+acorde a las gracicas y los test si hay relacion entre la valoracion del publico y que se siga emitiendo la serie
+
+la mayor parte de las series con mejor valoracion ya han dejado de emitir, pero puede ser debido a la antiguedad o la valoracion posterior de su final
